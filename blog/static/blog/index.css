@@ -1,0 +1,123 @@
+ 
+  #welcome {
+    background: linear-gradient(to right top, #705297, #1a0339);
+    padding: 6rem 12%;
+  }
+  
+  #welcome header {
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+  }
+  
+  #welcome img {
+    width: 12rem;
+    height: 16rem;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid rgb(74, 1, 84);
+    border-radius: 12px;
+    background-color: #e3d6c7;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.808);
+  }
+  
+  #welcome h2 {
+    font-size: 3.5rem;
+    margin: 0 0 0 2rem;
+    color: #d3cd2a;
+    width: 5rem;
+  }
+  
+  #welcome p {
+    color: rgb(187, 182, 192);
+    font-size: 1.3rem;
+  }
+  
+  #latest-posts {
+    background-color: rgb(113, 93, 125);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80rem;
+    margin: 6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.903);
+  }
+  
+  #latest-posts h2 {
+    text-align: center;
+  }
+  
+  #latest-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #latest-posts li {
+    flex: 1;
+  }
+  
+  #about {
+    text-align: center;
+    padding: 3rem;
+    background-color: #5a2444;
+    margin-top: 5rem;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.903);
+  }
+  
+  #about h2 {
+    font-size: 3rem;
+    color: #7e7474;
+  }
+  
+  #about p {
+    font-size: 1.5rem;
+    color: #e9d5d5;
+  }
+  
+  .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .post a {
+    text-decoration: none;
+    color: rgb(43, 3, 47);
+    transition: all 0.2s ease;
+    padding: 1rem;
+  }
+  
+  .post a:hover,
+  .post a:active {
+    transform: scale(1.1);
+    background-color: #785778;
+    color: white;
+  }
+  
+  .post img {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 5%;
+    
+    
+  }
+  
+  .post h3 {
+    margin: 0.25rem 0;
+  }
+  
+  .post time {
+    color: #666666;
+    margin: 0.25rem;
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+  
+  .post:hover time,
+  .post:active time {
+    color: white;
+  }

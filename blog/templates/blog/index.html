@@ -1,0 +1,42 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+My Blog 
+{% endblock %} 
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+  <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+
+<section id="welcome">
+  <header>
+    <img src="{%static "blog/images/me.jpg"%}" alt="Maya - The Author Of This Blog" />
+    <h2>MAYA'S BLOG</h2>
+  </header>
+  <p>Hi, it's Maya! Welcome to my blog!</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Thoughts</h2>
+
+  <ul>
+    {% for post in posts %}
+      {% include "blog/includes/post.html" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I Do</h2>
+  <p>
+    I'm a student, studying economic cybernetics and looking who I meant to be. 
+  </p>
+  <p>
+    Hope you'll enjoy seeing my life right here on this blog!
+  </p>
+</section>
+{% endblock %}

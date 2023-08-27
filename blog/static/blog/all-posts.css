@@ -1,0 +1,46 @@
+body {
+    background-color: #d2b4d3;
+  }
+  
+  #main-navigation {
+    background: linear-gradient(to right top, #705297, #1a0339);
+    padding: 6rem 12%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  #all-posts {
+    margin: 7rem auto;
+    width: 90%;
+    max-width: 50rem;
+  }
+  
+  #all-posts h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #072142;
+    margin: 3rem 0;
+    text-overflow: ellipsis " [..]";
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1.5rem;
+    text-overflow: ellipsis " [..]";
+  }
+  
+  .post img {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .post a {
+    height: 27rem;
+    transform-origin: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    background-color: rgb(117, 92, 131);
+  }
